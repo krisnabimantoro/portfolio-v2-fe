@@ -9,6 +9,10 @@ import { motion } from "motion/react";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { Pointer } from "@/components/magicui/pointer";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
+import { Pencil, Search, Settings } from "lucide-react";
+import OrbitingSKill from "./components-section/grid/orbiting";
+import { TimelinePortfolio } from "./components-section/timeline";
 
 export default function Home() {
   return (
@@ -19,7 +23,6 @@ export default function Home() {
           "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]"
         )}
       />
-
       <Spotlight className=" fixed -top-40 left-0 md:-top-20 md:left-60 " fill="white" />
       <section>
         <div className="h-dvh flex items-center ">
@@ -50,9 +53,27 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black"></div>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black"></div>
       </section>
-
-      <div className="mt-20 space-y-10 w-[120vh]">
-        <div className="h-96 bg-neutral-800/40 rounded-lg w-full">tes</div>
+      <section className="w-[150vh] z-10 mt-96">
+        <div className="grid grid-cols-5 grid-rows-4 gap-4 ">
+          <div className="col-span-4 bg-neutral-800/40">
+            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">Get to know your Krisna.</h2>
+          </div>
+          <div className="row-span-3 col-start-1 row-start-2 bg-neutral-800/40 ">2</div>
+          <div className="col-span-2 row-span-2 col-start-4 row-start-3 bg-neutral-950   ">
+            <OrbitingSKill />
+          </div>
+          <div className="col-span-2 row-span-2 col-start-2 row-start-2 bg-neutral-800/40">11</div>
+          <div className="col-span-2 col-start-4 row-start-2 bg-neutral-800/40">12</div>
+          <div className="col-start-5 row-start-1 bg-neutral-800/40">13</div>
+          <div className="col-start-2 row-start-4 bg-neutral-800/40">14</div>
+          <div className="col-start-3 row-start-4 bg-neutral-800/40">15</div>
+        </div>
+      </section>
+      <section className="w-[150vh] ">
+        <TimelinePortfolio />
+      </section>
+      <div className="mt-20 space-y-10 w-[150vh]">
+        <div className="h-96 bg-neutral-800/40 rounded-lg w-full">tesasdadasd</div>
         <div className="h-96 bg-neutral-800/40 rounded-lg" />
         <div className="h-96 bg-neutral-800/40 rounded-lg" />
         <div className="h-96 bg-neutral-800/40 rounded-lg" />
