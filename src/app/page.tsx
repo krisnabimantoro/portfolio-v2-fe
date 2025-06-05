@@ -59,7 +59,7 @@ export default function Home() {
             <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">Get to know your Krisna.</h2>
           </div>
           <div className="row-span-3 col-start-1 row-start-2 bg-neutral-800/40 ">2</div>
-          <div className="col-span-2 row-span-2 col-start-4 row-start-3 bg-neutral-950   ">
+          <div className="col-span-2 row-span-2 col-start-4 row-start-3 bg-neutral-950/80   ">
             <OrbitingSKill />
           </div>
           <div className="col-span-2 row-span-2 col-start-2 row-start-2 bg-neutral-800/40">11</div>
