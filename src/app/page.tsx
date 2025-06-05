@@ -8,6 +8,7 @@ import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "motion/react";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { Pointer } from "@/components/magicui/pointer";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 export default function Home() {
   return (
@@ -44,22 +45,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="relative flex w-full flex-col items-center justify-center overflow-hidden text-white">
+        <VelocityScroll>Krisna Bimantoro</VelocityScroll>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black"></div>
+      </section>
 
-      {/* <LampContainer>
-        <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl "
-        >
-          Krisna Bimantoro
-        </motion.h1>
-      </LampContainer> */}
-      {/* Example extra content to enable scrolling */}
       <div className="mt-20 space-y-10 w-[120vh]">
         <div className="h-96 bg-neutral-800/40 rounded-lg w-full">tes</div>
         <div className="h-96 bg-neutral-800/40 rounded-lg" />
