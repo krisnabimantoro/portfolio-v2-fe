@@ -13,6 +13,7 @@ import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { Pencil, Search, Settings } from "lucide-react";
 import OrbitingSKill from "./components-section/grid/orbiting";
 import { TimelinePortfolio } from "./components-section/timeline";
+import MarqueeSection from "./components-section/marquee-section";
 
 export default function Home() {
   return (
@@ -69,9 +70,21 @@ export default function Home() {
           <div className="col-start-3 row-start-4 bg-neutral-800/40">15</div>
         </div>
       </section>
+
       <section className="w-[150vh] ">
         <TimelinePortfolio />
       </section>
+
+      <section className="w-full relative z-10 my-20">
+        <MarqueeSection />
+      </section>
+
+      <section className="w-full relative z-10 my-20">
+        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
+          Projects 🧤
+        </h1>
+      </section>
+
       <div className="mt-20 space-y-10 w-[150vh]">
         <div className="h-96 bg-neutral-800/40 rounded-lg w-full">tesasdadasd</div>
         <div className="h-96 bg-neutral-800/40 rounded-lg" />
