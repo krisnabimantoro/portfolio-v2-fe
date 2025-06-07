@@ -3,7 +3,7 @@ import { Pencil, Settings, Search } from "lucide-react";
 
 export default function OrbitingSKill() {
   return (
-    <div className="z-20 relative h-[500px] flex items-center justify-center overflow-hidden">
+    <div className="z-20 relative h-[500px] flex items-center justify-center overflow-hidden w-[500px]">
       <OrbitingCircles>
         <Pencil className="fill-white" />
         <Settings className="fill-white" />

@@ -55,10 +55,11 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black"></div>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black"></div>
       </section>
+
       <section className="w-[150vh] z-10 mt-96">
         <div className="grid grid-cols-5 grid-rows-4 gap-4 ">
-          <div className="col-span-4 bg-neutral-800/40">
-            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">Get to know your Krisna.</h2>
+          <div className="col-span-4 bg-[url(/bg.jpg)] bg-cover">
+            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know your Krisna.</h2>
           </div>
           <div className="row-span-3 col-start-1 row-start-2 bg-neutral-800/40 ">2</div>
           <div className="col-span-2 row-span-2 col-start-4 row-start-3 bg-neutral-950/80   ">
@@ -69,6 +70,10 @@ export default function Home() {
           <div className="col-start-5 row-start-1 bg-neutral-800/40">13</div>
           <div className="col-start-2 row-start-4 bg-neutral-800/40">14</div>
           <div className="col-start-3 row-start-4 bg-neutral-800/40">15</div>
+        </div>
+
+        <div className="bg-neutral-950/80 max-w-fit">
+          <OrbitingSKill />
         </div>
       </section>
 
