@@ -14,6 +14,7 @@ import { Pencil, Search, Settings } from "lucide-react";
 import OrbitingSKill from "./components-section/grid/orbiting";
 import { TimelinePortfolio } from "./components-section/timeline";
 import MarqueeSection from "./components-section/marquee-section";
+import { CardProject } from "./components-section/card/card-project";
 
 export default function Home() {
   return (
@@ -79,10 +80,16 @@ export default function Home() {
         <MarqueeSection />
       </section>
 
-      <section className="w-full relative z-10 my-20">
+      <section className="w-full relative z-10 my-20 flex flex-col items-center justify-center">
         <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
           Projects 🧤
         </h1>
+        <div className="grid grid-cols-3  items-center justify-items-center gap-4 mt-10 ">
+          <CardProject />
+          <CardProject />
+          <CardProject />
+          <CardProject />
+        </div>
       </section>
 
       <div className="mt-20 space-y-10 w-[150vh]">
