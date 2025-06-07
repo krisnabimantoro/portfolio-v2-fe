@@ -81,10 +81,13 @@ export default function Home() {
       </section>
 
       <section className="w-full relative z-10 my-20 flex flex-col items-center justify-center">
-        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
-          Projects 🧤
-        </h1>
-        <div className="grid grid-cols-3  items-center justify-items-center gap-4 mt-10 ">
+        <div className="flex flex-row items-center justify-center">
+          <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
+            Projects
+          </h1>
+          <h1 className=" text-center text-4xl font-bold md:text-7xl">🧤</h1>
+        </div>
+        <div className="grid grid-cols-2 w-[150vh] items-center justify-items-center gap-5 mt-10 gap-y-10 ">
           <CardProject />
           <CardProject />
           <CardProject />
