@@ -4,7 +4,7 @@ import { TextRevealCard, TextRevealCardDescription, TextRevealCardTitle } from "
 
 export function CardAbout() {
   return (
-    <div className="flex items-center justify-center bg-[#0E0E10] h-full rounded-2xl w-full">
+    <div className="flex items-center justify-center bg-[#0E0E10] h-full rounded-lg w-full">
       <TextRevealCard text="You know the business" revealText="I know the chemistry ">
         <TextRevealCardTitle>About Me</TextRevealCardTitle>
         <TextRevealCardDescription className="text-justify">
