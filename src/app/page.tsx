@@ -62,25 +62,25 @@ export default function Home() {
 
       <section className="w-[150vh] z-10 mt-96">
         <div className="flex flex-col relative w-full items-start justify-end gap-3">
-          <div className="h-48 w-full bg-[url(/pexel.jpg)] bg-cover p-8 rounded-lg">
+          <BlurFade className="h-48 w-full bg-[url(/pexel.jpg)] bg-cover p-8 rounded-lg" delay={0.25} inView>
             <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know about Krisna.</h2>
-          </div>
+          </BlurFade>
 
           <div className=" flex flex-row gap-3 w-full relative z-10">
-            <div className="h-96 w-2xl bg-neutral-50 rounded-lg">
+            <BlurFade inView delay={0.5} className="h-96 w-2xl bg-neutral-50 rounded-lg">
               <CardHero />
-            </div>
+            </BlurFade>
 
-            <div className="h-96 w-full bg-white rounded-lg">
+            <BlurFade inView delay={0.75} className="h-96 w-full bg-white rounded-lg">
               <CardAbout />
-            </div>
+            </BlurFade>
 
-            <div className="flex flex-col gap-3 w-full ">
+            <BlurFade inView delay={1} className="flex flex-col gap-3 w-full ">
               <CardActivity />
-              <div className="h-fit w-full items-center justify-center flex bg-neutral-900 ">
+              <BlurFade inView delay={1.25} className="h-fit w-full items-center justify-center flex bg-neutral-900 ">
                 <OrbitingSKill />
-              </div>
-            </div>
+              </BlurFade>
+            </BlurFade>
           </div>
           <div className="absolute w-full h-48 bg-neutral-900 rounded-lg  z-0" />
         </div>
