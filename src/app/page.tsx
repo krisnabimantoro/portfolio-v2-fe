@@ -67,22 +67,22 @@ export default function Home() {
           </BlurFade>
 
           <div className=" flex flex-row gap-3 w-full relative z-10">
-            <BlurFade inView delay={0.5} className="h-96 w-2xl bg-neutral-50 rounded-lg">
+            <BlurFade inView delay={0.2} className="h-96 w-2xl bg-neutral-50 rounded-lg">
               <CardHero />
             </BlurFade>
 
-            <BlurFade inView delay={0.75} className="h-96 w-full bg-white rounded-lg">
+            <BlurFade inView delay={0.4} className="h-96 w-full bg-white rounded-lg">
               <CardAbout />
             </BlurFade>
 
-            <BlurFade inView delay={1} className="flex flex-col gap-3 w-full ">
+            <BlurFade inView delay={0.6} className="flex flex-col gap-3 w-full ">
               <CardActivity />
-              <BlurFade inView delay={1.25} className="h-fit w-full items-center justify-center flex bg-neutral-900 ">
+              <BlurFade inView delay={0.8} className="h-fit w-full items-center justify-center flex bg-neutral-900 ">
                 <OrbitingSKill />
               </BlurFade>
             </BlurFade>
           </div>
-          <BlurFade inView delay={0.75} className="absolute w-full h-48 flex justify-center items-center bg-neutral-900 rounded-lg  z-0">
+          <BlurFade inView delay={1} className="absolute w-full h-48 flex justify-center items-center bg-neutral-900 rounded-lg  z-0">
             <MarqueeSection />
             <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-neutral-950/60"></div>
           </BlurFade>
