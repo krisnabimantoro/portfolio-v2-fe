@@ -18,6 +18,7 @@ import Image from "next/image";
 
 import { CardProject } from "./components-section/card/card-project";
 import { CardHero } from "./components-section/card/card-hero.";
+import { CardAbout } from "./components-section/card/card-about";
 
 export default function Home() {
   return (
@@ -67,11 +68,12 @@ export default function Home() {
 
           <div className=" flex flex-row gap-3 w-full relative z-10">
             <div className="h-96 w-2xl bg-neutral-50 rounded-lg">
-              
-                <CardHero />
+              <CardHero />
             </div>
 
-            <div className="h-96 w-full bg-white rounded-lg">2</div>
+            <div className="h-96 w-full bg-white rounded-lg">
+              <CardAbout />
+            </div>
 
             <div className="flex flex-col gap-3 w-full ">
               <div className="h-48 w-full bg-gray-600 rounded-lg">3</div>
