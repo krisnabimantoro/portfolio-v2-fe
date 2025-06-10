@@ -14,11 +14,11 @@ import { Pencil, Search, Settings } from "lucide-react";
 import OrbitingSKill from "./components-section/grid/orbiting";
 import { TimelinePortfolio } from "./components-section/timeline";
 import MarqueeSection from "./components-section/marquee-section";
-import Image from "next/image";
 
 import { CardProject } from "./components-section/card/card-project";
 import { CardHero } from "./components-section/card/card-hero.";
 import { CardAbout } from "./components-section/card/card-about";
+import CardActivity from "./components-section/card/card-activity";
 
 export default function Home() {
   return (
@@ -76,33 +76,14 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-3 w-full ">
-              <div className="h-48 w-full bg-gray-600 rounded-lg">3</div>
-              <div className="h-fit w-full items-center justify-center flex bg-gray-950 ">
+              <CardActivity />
+              <div className="h-fit w-full items-center justify-center flex bg-neutral-950 ">
                 <OrbitingSKill />
               </div>
             </div>
           </div>
           <div className="absolute w-full h-48 bg-white rounded-lg  z-0" />
         </div>
-
-        <div className="grid grid-cols-5 grid-rows-4 gap-4 ">
-          {/* <div className="col-span-4 bg-[url(/bg.jpg)] bg-cover">
-            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know your Krisna.</h2>
-          </div> */}
-          <div className="row-span-3 col-start-1 row-start-2 bg-neutral-800/40 ">2</div>
-          <div className="col-span-2 row-span-2 col-start-4 row-start-3 bg-neutral-950/80   ">
-            <OrbitingSKill />
-          </div>
-          <div className="col-span-2 row-span-2 col-start-2 row-start-2 bg-neutral-800/40">11</div>
-          <div className="col-span-2 col-start-4 row-start-2 bg-neutral-800/40">12</div>
-          <div className="col-start-5 row-start-1 bg-neutral-800/40">13</div>
-          <div className="col-start-2 row-start-4 bg-neutral-800/40">14</div>
-          <div className="col-start-3 row-start-4 bg-neutral-800/40">15</div>
-        </div>
-
-        {/* <div className="bg-neutral-950/80 max-w-fit">
-          <OrbitingSKill />
-        </div> */}
       </section>
 
       <section className="w-full relative z-10 my-20">
