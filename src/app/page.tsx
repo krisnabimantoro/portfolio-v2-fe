@@ -82,10 +82,10 @@ export default function Home() {
               </BlurFade>
             </BlurFade>
           </div>
-          <div className="absolute w-full h-48 flex justify-center items-center bg-neutral-900 rounded-lg  z-0">
+          <BlurFade inView delay={0.75} className="absolute w-full h-48 flex justify-center items-center bg-neutral-900 rounded-lg  z-0">
             <MarqueeSection />
             <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-neutral-950/60"></div>
-          </div>
+          </BlurFade>
         </div>
       </section>
 
