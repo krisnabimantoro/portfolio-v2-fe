@@ -60,7 +60,7 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black"></div>
       </section>
 
-      <section className="w-[150vh] z-10 mt-96">
+      <section className="w-[150vh] z-10 mt-60">
         <div className="flex flex-col relative w-full items-start justify-end gap-3">
           <BlurFade className="h-48 w-full bg-[url(/pexel.jpg)] bg-cover p-8 rounded-lg" delay={0.25} inView>
             <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know about Krisna.</h2>
@@ -82,13 +82,14 @@ export default function Home() {
               </BlurFade>
             </BlurFade>
           </div>
-          <div className="absolute w-full h-48 bg-neutral-900 rounded-lg  z-0" />
+          <div className="absolute w-full h-48 flex justify-center items-center bg-neutral-900 rounded-lg  z-0">
+            <MarqueeSection />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-neutral-950/60"></div>
+          </div>
         </div>
       </section>
 
-      <section className="w-full relative z-10 my-20">
-        <MarqueeSection />
-      </section>
+      <section className="w-full relative z-10 my-20"></section>
 
       <section className="w-full relative z-10 my-20 flex flex-col items-center justify-center">
         <div className="flex flex-row items-center justify-center">
