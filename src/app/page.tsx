@@ -14,6 +14,8 @@ import { Pencil, Search, Settings } from "lucide-react";
 import OrbitingSKill from "./components-section/grid/orbiting";
 import { TimelinePortfolio } from "./components-section/timeline";
 import MarqueeSection from "./components-section/marquee-section";
+import Image from "next/image";
+
 import { CardProject } from "./components-section/card/card-project";
 
 export default function Home() {
@@ -57,10 +59,46 @@ export default function Home() {
       </section>
 
       <section className="w-[150vh] z-10 mt-96">
-        <div className="grid grid-cols-5 grid-rows-4 gap-4 ">
-          <div className="col-span-4 bg-[url(/bg.jpg)] bg-cover">
-            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know your Krisna.</h2>
+        <div className="flex flex-col relative w-full items-start justify-end gap-3">
+          <div className="h-48 w-full bg-[url(/pexel.jpg)] bg-cover p-8 rounded-lg">
+            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know about Krisna.</h2>
           </div>
+
+          <div className=" flex flex-row gap-3 w-full relative z-10">
+            <div className="h-96 w-2xl bg-neutral-50 rounded-lg">
+              <div className="relative flex h-full w-full items-center justify-center bg-black">
+                <div
+                  className={cn(
+                    "absolute inset-0",
+                    "[background-size:40px_40px]",
+                    "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+                    "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+                  )}
+                />
+                {/* Radial gradient for the container to give a faded look */}
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)] bg-black"></div>
+
+                {/* <Image src="/krisna.png" className="z-20 relative bottom-0" alt="Description of the image" width={500} height={500} /> */}
+                {/* <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">tes</p> */}
+              </div>
+            </div>
+
+            <div className="h-96 w-full bg-white rounded-lg">2</div>
+
+            <div className="flex flex-col gap-3 w-full ">
+              <div className="h-48 w-full bg-gray-600 rounded-lg">3</div>
+              <div className="h-fit w-full items-center justify-center flex bg-gray-950 ">
+                <OrbitingSKill />
+              </div>
+            </div>
+          </div>
+          <div className="absolute w-full h-48 bg-white rounded-lg  z-0" />
+        </div>
+
+        <div className="grid grid-cols-5 grid-rows-4 gap-4 ">
+          {/* <div className="col-span-4 bg-[url(/bg.jpg)] bg-cover">
+            <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know your Krisna.</h2>
+          </div> */}
           <div className="row-span-3 col-start-1 row-start-2 bg-neutral-800/40 ">2</div>
           <div className="col-span-2 row-span-2 col-start-4 row-start-3 bg-neutral-950/80   ">
             <OrbitingSKill />
@@ -72,13 +110,9 @@ export default function Home() {
           <div className="col-start-3 row-start-4 bg-neutral-800/40">15</div>
         </div>
 
-        <div className="bg-neutral-950/80 max-w-fit">
+        {/* <div className="bg-neutral-950/80 max-w-fit">
           <OrbitingSKill />
-        </div>
-      </section>
-
-      <section className="w-[150vh] ">
-        <TimelinePortfolio />
+        </div> */}
       </section>
 
       <section className="w-full relative z-10 my-20">
