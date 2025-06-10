@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CardActivity() {
   return (
-    <div className="h-48 w-full bg-neutral-900 rounded-xl flex flex-col gap-2 justify-center p-2">
+    <div className="h-48 w-full bg-neutral-900 rounded-xl flex flex-col gap-2 justify-center p-3">
       <div className=" w-auto h-full rounded-sm bg-neutral-800 p-2 flex items-center flex-row">
         <Image src="/card-active/logo_umm.png" alt="Universitas Muhammadiyah Malang" width={50} height={100} />
         <div className="flex flex-col items-start justify-center ml-2">

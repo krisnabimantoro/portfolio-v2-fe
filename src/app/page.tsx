@@ -77,12 +77,12 @@ export default function Home() {
 
             <div className="flex flex-col gap-3 w-full ">
               <CardActivity />
-              <div className="h-fit w-full items-center justify-center flex bg-neutral-950 ">
+              <div className="h-fit w-full items-center justify-center flex bg-neutral-900 ">
                 <OrbitingSKill />
               </div>
             </div>
           </div>
-          <div className="absolute w-full h-48 bg-white rounded-lg  z-0" />
+          <div className="absolute w-full h-48 bg-neutral-900 rounded-lg  z-0" />
         </div>
       </section>
 
