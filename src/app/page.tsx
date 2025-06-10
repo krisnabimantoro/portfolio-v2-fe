@@ -17,6 +17,7 @@ import MarqueeSection from "./components-section/marquee-section";
 import Image from "next/image";
 
 import { CardProject } from "./components-section/card/card-project";
+import { CardHero } from "./components-section/card/card-hero.";
 
 export default function Home() {
   return (
@@ -66,21 +67,8 @@ export default function Home() {
 
           <div className=" flex flex-row gap-3 w-full relative z-10">
             <div className="h-96 w-2xl bg-neutral-50 rounded-lg">
-              <div className="relative flex h-full w-full items-center justify-center bg-black">
-                <div
-                  className={cn(
-                    "absolute inset-0",
-                    "[background-size:40px_40px]",
-                    "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-                    "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
-                  )}
-                />
-                {/* Radial gradient for the container to give a faded look */}
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)] bg-black"></div>
-
-                {/* <Image src="/krisna.png" className="z-20 relative bottom-0" alt="Description of the image" width={500} height={500} /> */}
-                {/* <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">tes</p> */}
-              </div>
+              
+                <CardHero />
             </div>
 
             <div className="h-96 w-full bg-white rounded-lg">2</div>
