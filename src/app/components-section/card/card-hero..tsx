@@ -17,7 +17,7 @@ export function CardHero() {
       >
         <div className="text relative z-50">
           <h1 className="font-bold text-xl md:text-3xl text-gray-50 relative">Krisna Bimantoro</h1>
-          <p className="font-normal text-base text-gray-50 relative my-4">
+          <p className="font-normal text-base text-gray-50 relative my-2">
             Software Engineer
           </p>
         </div>
