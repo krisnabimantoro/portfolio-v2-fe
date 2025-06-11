@@ -22,7 +22,7 @@ import CardActivity from "./components-section/card/card-activity";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col min-h-screen  w-full rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center overflow-auto ">
+    <div className="relative flex flex-col min-h-screen  w-full  bg-black/[0.96] antialiased md:items-center md:justify-center overflow-auto ">
       <div
         className={cn(
           "pointer-events-none fixed inset-0 [background-size:40px_40px] select-none ",

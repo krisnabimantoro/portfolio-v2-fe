@@ -8,7 +8,9 @@ import BadgeRole from "./components/badge-role";
 export function CardProject() {
   return (
     <div className="max-w-xl w-full group/card">
-      <div
+      
+      <a
+      href="./project"
         className={cn(
           "cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl  max-w-xl mx-auto backgroundImage flex flex-col justify-between p-4",
           "bg-[url(https://plus.unsplash.com/premium_photo-1664362416374-4f734db57037?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover"
@@ -30,7 +32,7 @@ export function CardProject() {
             Card with Author avatar, complete name and time to read - most suitable for blogs.
           </p>
         </div>
-      </div>
+      </a>
     </div>
   );
 }
