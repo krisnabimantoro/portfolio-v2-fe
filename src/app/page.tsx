@@ -62,29 +62,29 @@ export default function Home() {
 
       <section className="w-[150vh] z-10 mt-60">
         <div className="flex flex-col relative w-full items-start justify-end gap-3">
-          <BlurFade className="h-48 w-full bg-[url(/pexel.jpg)] bg-cover p-8 rounded-lg" delay={0.25} inView>
+          <BlurFade className="h-48 w-full bg-[url(/pexel.jpg)] bg-cover p-8 rounded-lg" delay={0.05} inView>
             <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans ">Get to know about Krisna.</h2>
           </BlurFade>
 
           <div className=" flex flex-row gap-3 w-full relative z-10">
-            <BlurFade inView delay={0.2} className="h-96 w-2xl bg-neutral-50 rounded-lg">
+            <BlurFade inView delay={0.1} className="h-96 w-2xl bg-neutral-50 rounded-lg">
               <CardHero />
             </BlurFade>
 
-            <BlurFade inView delay={0.4} className="h-96 w-full bg-white rounded-lg">
+            <BlurFade inView delay={0.2} className="h-96 w-full bg-white rounded-lg">
               <CardAbout />
             </BlurFade>
 
-            <BlurFade inView delay={0.6} className="flex flex-col gap-3 w-full ">
+            <BlurFade inView delay={0.3} className="flex flex-col gap-3 w-full ">
               <CardActivity />
-              <BlurFade inView delay={0.8} className="h-fit w-full items-center justify-center flex bg-neutral-900 ">
+              <BlurFade inView delay={0.4} className="h-fit w-full items-center justify-center flex bg-neutral-900 ">
                 <OrbitingSKill />
               </BlurFade>
             </BlurFade>
           </div>
-          <BlurFade inView delay={1} className="absolute w-full h-48 flex justify-center items-center bg-neutral-900 rounded-lg  z-0">
+          <BlurFade inView delay={0.5} className="absolute w-full h-48 flex justify-center items-center bg-neutral-900 rounded-lg  z-0">
             <MarqueeSection />
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-neutral-950/60"></div>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-neutral-950/90"></div>
           </BlurFade>
         </div>
       </section>
